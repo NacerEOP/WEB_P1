@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Postuler à une offre | Web4All Stages</title>
+    <meta name="description" content="Formulaire de candidature pour postuler à une offre de stage ou d'alternance." />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <span class="logo" aria-hidden="true">W4A</span>
+                <span class="brand-name">Web4All Stages</span>
+            </div>
+
+            <nav class="nav" aria-label="Navigation principale">
+                <a href="#" class="nav-link">Accueil</a>
+                <a href="#" class="nav-link">Offres</a>
+                <a href="#" class="nav-link">Entreprises</a>
+                <a href="#" class="nav-link">Connexion</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="contenu" class="container page">
+        <nav class="breadcrumb" aria-label="Fil d’ariane">
+            <ol>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Offres</a></li>
+                <li aria-current="page">Postuler</li>
+            </ol>
+        </nav>
+
+        <div class="page-head">
+            <h1>Postuler à l’offre</h1>
+            <p class="muted">
+                Merci de compléter le formulaire ci-dessous. Les champs marqués * sont obligatoires.
+            </p>
+        </div>
+
+        <section class="grid-apply" aria-label="Candidature">
+            <aside class="card offer-card">
+                <h2 class="card-title">Résumé de l’offre</h2>
+
+                <dl class="offer-meta">
+                    <div>
+                        <dt>Titre</dt>
+                        <dd>Développeur Web (Stage)</dd>
+                    </div>
+                    <div>
+                        <dt>Entreprise</dt>
+                        <dd>Centre de formation ABC</dd>
+                    </div>
+                    <div>
+                        <dt>Lieu</dt>
+                        <dd>Alger</dd>
+                    </div>
+                    <div>
+                        <dt>Type</dt>
+                        <dd>Stage</dd>
+                    </div>
+                    <div>
+                        <dt>Référence</dt>
+                        <dd>OF-2026-014</dd>
+                    </div>
+                </dl>
+
+                <p class="muted small">
+                    Conseil : vérifie ton email et ton CV avant l’envoi.
+                </p>
+            </aside>
+
+            <section class="card form-card">
+                <h2 class="card-title">Formulaire de candidature</h2>
+
+                <form class="apply-form" action="#" method="post" enctype="multipart/form-data">
+                    <div class="form-grid">
+                        <div class="field">
+                            <label for="nom">Nom *</label>
+                            <input id="nom" name="nom" type="text" autocomplete="family-name" required />
+                        </div>
+
+                        <div class="field">
+                            <label for="prenom">Prénom *</label>
+                            <input id="prenom" name="prenom" type="text" autocomplete="given-name" required />
+                        </div>
+
+                        <div class="field">
+                            <label for="email">Email *</label>
+                            <input id="email" name="email" type="email" autocomplete="email" required />
+                        </div>
+
+                        <div class="field">
+                            <label for="tel">Téléphone</label>
+                            <input id="tel" name="tel" type="tel" autocomplete="tel" placeholder="+213 ..." />
+                        </div>
+
+                        <div class="field">
+                            <label for="cv">CV (PDF) *</label>
+                            <input id="cv" name="cv" type="file" accept=".pdf" required />
+                            <p class="hint">Format accepté : PDF uniquement.</p>
+                        </div>
+
+                        <div class="field">
+                            <label for="lm">Lettre de motivation (optionnel)</label>
+                            <input id="lm" name="lm" type="file" accept=".pdf,.doc,.docx" />
+                            <p class="hint">Formats acceptés : PDF, DOC, DOCX.</p>
+                        </div>
+
+                        <div class="field field-full">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required
+                                placeholder="Explique brièvement ta motivation et ta disponibilité."></textarea>
+                        </div>
+
+                        <div class="field field-full">
+                            <label class="check">
+                                <input type="checkbox" name="cookies" required />
+                                <span>J’accepte l’utilisation des cookies nécessaires au bon fonctionnement du site
+                                    *</span>
+                            </label>
+                            <p class="hint">
+                                Voir la page <a href="mentions-legales.html#cookies">cookies</a>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="actions">
+                        <button class="btn" type="submit">Envoyer ma candidature</button>
+                        <a class="btn btn-outline" href="#">Annuler</a>
+                    </div>
+                </form>
+            </section>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p class="small muted">© 2026 Web4All Stages</p>
+            <nav class="footer-nav" aria-label="Liens de pied de page">
+                <a href="mentions-legales.html">Mentions légales</a>
+                <a href="mentions-legales.html#cookies">Cookies</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>
